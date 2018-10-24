@@ -29,3 +29,8 @@
 [[constraint]]
   branch = "master"
   name = "github.com/golang/glog"
+
+[prune]
+  non-go = true
+  unused-packages = true
+  go-tests = true
