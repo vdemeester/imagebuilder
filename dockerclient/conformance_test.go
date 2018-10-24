@@ -315,10 +315,16 @@ func TestConformanceInternal(t *testing.T) {
 			Dockerfile: "testdata/Dockerfile.args",
 			Args:       map[string]string{"BAR": "first"},
 		},
-		/*{ // uncomment when docker allows this
+		{
+			Name:       "args1",
 			Dockerfile: "testdata/Dockerfile.args",
 			Args:       map[string]string{"BAZ": "first"},
-		},*/
+		},
+		{
+			Name:       "heading-args",
+			Dockerfile: "testdata/Dockerfile.heading-args",
+			Args:       map[string]string{"BAR": "latest"},
+		},
 		{
 			Name:       "wildcard",
 			ContextDir: "testdata/wildcard",
