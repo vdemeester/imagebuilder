@@ -30,6 +30,18 @@
   branch = "master"
   name = "github.com/golang/glog"
 
+[[constraint]]
+  name = "github.com/moby/buildkit"
+  revision = "c7bb575343df0cbfeab8b5b28149630b8153fcc6"
+
+[[constraint]]
+  name = "github.com/docker/docker"
+  revision = "3dfb26ab3cbf961298f8ce3f94659b5fe4146ceb"
+
+[[override]]
+  name = "github.com/docker/libnetwork"
+  revision = "19279f0492417475b6bfbd0aa529f73e8f178fb5"
+
 [prune]
   non-go = true
   unused-packages = true

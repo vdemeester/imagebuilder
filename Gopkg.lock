@@ -2,14 +2,15 @@
 
 
 [[projects]]
-  digest = "1:4485ca12c0ab1317ddebfad6562c9dc0bd70b0453171b3e14f684553c1502490"
+  branch = "master"
+  digest = "1:81f8c061c3d18ed1710957910542bc17d2b789c6cd19e0f654c30b35fd255ca5"
   name = "github.com/Azure/go-ansiterm"
   packages = [
     ".",
     "winterm",
   ]
   pruneopts = "NUT"
-  revision = "19f72df4d05d31cbe1c56bfc8045c96babff6c7e"
+  revision = "d6e3b3328b783f23731bc4d058875b0371ff8109"
 
 [[projects]]
   digest = "1:2941ec6eccc1bc46b6cff9eb416fc623524f554e474367d378bd0ed8301652db"
@@ -28,7 +29,15 @@
   revision = "cd527374f1e5bff4938207604a14f2e38a9cf512"
 
 [[projects]]
-  digest = "1:c83563961034832809055818d18de4029e7f7c27c6a6ae29f7555926b2ddc680"
+  branch = "master"
+  digest = "1:e48c63e818c67fbf3d7afe20bba33134ab1a5bf384847385384fd027652a5a96"
+  name = "github.com/containerd/continuity"
+  packages = ["pathdriver"]
+  pruneopts = "NUT"
+  revision = "c220ac4f01b8a301edcb9c9c05d7600249138cfa"
+
+[[projects]]
+  digest = "1:f3a841c44c5943e422284c4c5e337f36597f2fd52ae853ce1021ea2ee2fdc305"
   name = "github.com/docker/docker"
   packages = [
     "api/types",
@@ -42,27 +51,23 @@
     "api/types/swarm",
     "api/types/swarm/runtime",
     "api/types/versions",
-    "builder/dockerfile/command",
-    "builder/dockerfile/parser",
     "opts",
     "pkg/archive",
     "pkg/fileutils",
     "pkg/homedir",
     "pkg/idtools",
     "pkg/ioutils",
-    "pkg/jsonlog",
     "pkg/jsonmessage",
     "pkg/longpath",
     "pkg/mount",
     "pkg/pools",
-    "pkg/promise",
     "pkg/stdcopy",
     "pkg/system",
     "pkg/term",
     "pkg/term/windows",
   ]
   pruneopts = "NUT"
-  revision = "b68221c37ee597950364788204546f9c9d0e46a1"
+  revision = "3dfb26ab3cbf961298f8ce3f94659b5fe4146ceb"
 
 [[projects]]
   digest = "1:87dcb59127512b84097086504c16595cf8fef35b9e0bfca565dfc06e198158d7"
@@ -80,6 +85,13 @@
   revision = "e30f1e79f3cd72542f2026ceec18d3bd67ab859c"
 
 [[projects]]
+  digest = "1:00d0d550a1f1d7ca03270ebc1e136f21f6b9dab37f0c37e9a90d56d2f7afcff9"
+  name = "github.com/docker/libnetwork"
+  packages = ["ipamutils"]
+  pruneopts = "NUT"
+  revision = "19279f0492417475b6bfbd0aa529f73e8f178fb5"
+
+[[projects]]
   branch = "openshift-3.9"
   digest = "1:e53a7420972f42b944ab9cdb52a604c6e69bff2a168fbda0e4bd05c1d99aad17"
   name = "github.com/fsouza/go-dockerclient"
@@ -89,11 +101,12 @@
   source = "https://github.com/openshift/go-dockerclient.git"
 
 [[projects]]
-  digest = "1:1e6e4ba33ea485832b3d364a2badcc001993047e997d57d46c9f1059e4ada0e7"
+  digest = "1:38e684375ef5b55e812332266d63f9fc5b6329ab303067c4cdda051db6d29ca4"
   name = "github.com/gogo/protobuf"
   packages = ["proto"]
   pruneopts = "NUT"
-  revision = "fcdc5011193ff531a548e9b0301828d5a5b97fd8"
+  revision = "636bf0302bc95575d69441b25a2603156ffdddf1"
+  version = "v1.1.1"
 
 [[projects]]
   branch = "master"
@@ -104,6 +117,24 @@
   revision = "23def4e6c14b4da8ac2ed8007337bc5eb5007998"
 
 [[projects]]
+  digest = "1:4059c14e87a2de3a434430340521b5feece186c1469eff0834c29a63870de3ed"
+  name = "github.com/konsorten/go-windows-terminal-sequences"
+  packages = ["."]
+  pruneopts = "NUT"
+  revision = "5c8c8bd35d3832f5d134ae1e1e375b69a4d25242"
+  version = "v1.0.1"
+
+[[projects]]
+  digest = "1:f9e752fd76d6123a25f5bff23dd60ddd3608a5cf8a36280f2ae9b3972dfd7850"
+  name = "github.com/moby/buildkit"
+  packages = [
+    "frontend/dockerfile/command",
+    "frontend/dockerfile/parser",
+  ]
+  pruneopts = "NUT"
+  revision = "c7bb575343df0cbfeab8b5b28149630b8153fcc6"
+
+[[projects]]
   digest = "1:e0cc8395ea893c898ff5eb0850f4d9851c1f57c78c232304a026379a47a552d0"
   name = "github.com/opencontainers/go-digest"
   packages = ["."]
@@ -112,14 +143,15 @@
   version = "v1.0.0-rc1"
 
 [[projects]]
-  digest = "1:72355c470c6667f840653face568d24896ce8ff9888b0304b18e5e7452147206"
+  digest = "1:11db38d694c130c800d0aefb502fb02519e514dc53d9804ce51d1ad25ec27db6"
   name = "github.com/opencontainers/image-spec"
   packages = [
     "specs-go",
     "specs-go/v1",
   ]
   pruneopts = "NUT"
-  revision = "97ae57f204b5956aa313d453ead9094ff9056b32"
+  revision = "d60099175f88c47cd379c4738d158884749ed235"
+  version = "v1.0.1"
 
 [[projects]]
   digest = "1:c1b423f7c38055168a45046fd3542a0fef73f27b5a3b29ff8b9ceb5e70416f6f"
@@ -132,18 +164,20 @@
   revision = "ae2948042b08ad3d6d13cd09f40a50ffff4fc688"
 
 [[projects]]
-  digest = "1:074bc35ec6969d7603de3cffb5bb9dc3b6fb694745a9837942fa9b1670e511e6"
+  digest = "1:5cf3f025cbee5951a4ee961de067c8a89fc95a5adabead774f82822efabab121"
   name = "github.com/pkg/errors"
   packages = ["."]
   pruneopts = "NUT"
-  revision = "c605e284fe17294bda444b34710735b29d1a9d90"
+  revision = "645ef00459ed84a119197bfb8d8205042c6df63d"
+  version = "v0.8.0"
 
 [[projects]]
-  digest = "1:414933e1ae2e9e19123e52fb29c97cb9d127d8a500f45a2ba80b537283a38b87"
+  digest = "1:ecf78eacf406c42f07f66d6b79fda24d2b92dc711bfd0760d0c931678f9621fe"
   name = "github.com/sirupsen/logrus"
   packages = ["."]
   pruneopts = "NUT"
-  revision = "89742aefa4b206dcf400792f3bd35b542998eb3b"
+  revision = "ad15b42461921f1fb3529b058c6786c6a45d5162"
+  version = "v1.1.1"
 
 [[projects]]
   digest = "1:624a05c7c6ed502bf77364cd3d54631383dafc169982fddd8ee77b53c3d9cccf"
@@ -177,13 +211,13 @@
   analyzer-version = 1
   input-imports = [
     "github.com/docker/docker/api/types",
-    "github.com/docker/docker/builder/dockerfile/command",
-    "github.com/docker/docker/builder/dockerfile/parser",
     "github.com/docker/docker/pkg/archive",
     "github.com/docker/docker/pkg/fileutils",
     "github.com/docker/docker/pkg/idtools",
     "github.com/fsouza/go-dockerclient",
     "github.com/golang/glog",
+    "github.com/moby/buildkit/frontend/dockerfile/command",
+    "github.com/moby/buildkit/frontend/dockerfile/parser",
   ]
   solver-name = "gps-cdcl"
   solver-version = 1
